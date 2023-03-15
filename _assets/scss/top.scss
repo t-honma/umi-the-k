@@ -1,0 +1,482 @@
+@import "mq";
+
+html{}
+body{
+}
+
+#top{
+	.container{
+		width: 100%;
+		overflow:hidden;
+		header{
+			z-index: 50;
+			@include sp{
+				position: absolute;
+				height: auto;
+			}
+			@include pc{
+				position: absolute;
+				width: 100%;
+			}
+			.inner{
+				@include pc{
+					
+				}
+				.logo{
+					display: none;
+				}
+				nav{
+					@include pc{
+						position: absolute;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						height: 330px;
+					}
+				}
+			}
+		}
+		.inner{
+			@include pc{
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+			}
+		}
+
+		.sp_fv{
+			@include sp{
+				height:100vh;
+			}
+		}
+
+		.mv{
+			position: relative;
+			width: 100%;
+
+
+			h1{
+				position: absolute;
+				margin:auto;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				z-index: 10;
+				@include sp{
+					width: 60vw;
+					height: 49.5vw;
+				}
+				@include pc{
+					width:380px;
+					height:312px;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			.mv_slider{
+				position: relative;
+				@include pc{
+					width: 100%;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		section{
+			h2{
+				@include sp{
+					line-height:1;
+					font-size: get_vw(38);
+					margin-bottom: 1em;
+					text-align: center;
+				}
+			}
+		}
+		.reservation{
+			background-color: #bfb3a8;
+			@include sp{
+				padding: 5vw 0;
+			}
+			@include pc{
+				padding:20px 0;
+			}
+			.inner{
+				@include sp{
+					width: 100%;
+					height: auto;
+				}
+				@include pc{
+					width:930px;
+					margin: 0 auto;
+				}
+				h2{
+					color: #42210f;
+					text-align: center;
+					@include pc{
+						float: left;
+						font-size: 20px;
+						display:inline;
+						margin-top: 22px;
+						margin-right: 20px;
+					}
+				}
+				.reservation_search{
+					@include pc{
+						display:inline-block;
+					}
+					.reservation_search_inner{
+						@include sp{
+							font-size: get_vw(24);
+							width: auto;
+							margin:0 20vw 5vw 20vw;
+							&:last-child{
+								margin-bottom: 0;
+							}
+						}
+						@include pc{
+							display:inline-block;
+							font-size: 14px;
+							margin:0 5px;
+							height: 60px;
+							vertical-align: middle;
+						}
+						select{
+							background-color: #fff;
+							border:none;
+							color:#000;
+							@include sp{
+								font-size: get_vw(26);
+								padding: get_vw(10);
+							}
+							@include pc{
+								font-size: 15px;
+								padding: 5px;
+							}
+						}
+						.undecided{
+							@include sp{
+								margin-top: get_vw(10);
+							}
+							@include pc{
+								display: inline;
+								margin-left: 10px;
+							}
+						}
+						input[type="submit"]{
+							background-color: #42210f;
+							border:none;
+							color:#fff;
+							@include sp{
+								width: 100%;
+								padding: 1em 0;
+								border-radius: 1vw;
+							}
+							@include pc{
+								border-radius: 5px;
+								line-height: 1;
+								padding: 15px 0;
+								width: 200px;
+								margin-top: 12px;
+							}
+						}
+						&.flex{
+							@include sp{
+								display:flex;
+							}
+							@include pc{
+								margin-left: 10px;
+							}
+							.reservation_search_inner_table{
+								@include sp{
+									margin-right: get_vw(20);
+								}
+								@include pc{
+									display:inline-block;
+									width: 70px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.introduction{
+			.inner{
+				@include sp{
+					padding: get_vw(70) 0 get_vw(80) 0;
+				}
+				@include pc{
+					padding:60px 0;
+				}
+				p{
+					@include sp{
+						margin-left: get_vw(50);
+						margin-right: get_vw(50);
+					}
+					@include pc{
+						font-size: 14px;
+						line-height: 2;
+						text-align: center;
+					}
+					&.lead{
+						font-weight: 500;
+						text-align: center;
+						@include sp{
+							font-size: get_vw(28);
+							line-height:1.75;
+							margin-bottom: 1em;
+							margin-left: 0;
+							margin-right: 0;
+							text-align: center;
+						}
+						@include pc{
+							font-size: 18px;
+							line-height: 2;
+							margin-bottom: 1em;
+						}
+					}
+				}
+			}
+		}
+		.rooms{
+			overflow-x: hidden;
+			@include pc{
+				padding-bottom: 180px;
+			}
+			.rooms_slider{
+				position: relative;
+				@include pc{
+					max-height: 550px;
+				}
+				.slick-list{
+					overflow:visible;
+				}
+				.rooms_wrap{
+					@include sp{
+						padding:0 3vw;
+					}
+					@include pc{
+						margin:0 40px;
+					}
+
+					figure{
+						@include sp{
+							width: 100%;
+						}
+						@include pc{
+							position: relative;
+							margin: 0 auto;
+							// width: 700px !important;
+						}
+						img{
+							width: 100%;
+							height: auto;
+						}
+						.text_box{
+							background-color: rgba(255,255,255,0.75);
+							@include sp{
+								position: relative;
+								padding: get_vw(25);
+								top:-14vw;
+								right: -3vw;
+							}
+							@include pc{
+								position: absolute;
+								box-sizing: border-box;
+								padding:25px 30px;
+								width: 360px;
+								right: -50px;
+								bottom:-60px;
+
+								box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 5px 5px 5px 5px rgba(10,10,10,0.02);
+							}
+							h2{
+								color: $blueColor;
+								font-weight: 500;
+								@include sp{
+									font-size: get_vw(30);
+									margin-bottom: 0.5em;
+								}
+								@include pc{
+									font-size: 20px;
+									margin-bottom: 0.5em;
+								}
+							}
+							p{
+								@include sp{
+									margin-bottom: 1em;
+								}
+								@include pc{
+									font-size: 14px;
+									line-height: 2;
+									margin-bottom: 1.5em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.location{
+			@include pc{
+				background-image: url(../images/top/location_bg.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				-webkit-background-size: 1200px auto;
+				background-size: 1200px auto;
+			}
+			.inner{
+				@include sp{
+					margin:0 get_vw(50);
+					padding: get_vw(60) 0 get_vw(80) 0;
+					text-align: center;
+				}
+				@include pc{
+					width:780px;
+					padding: 150px 0;
+				}
+				h2{
+					color: $blueColor;
+					@include sp{
+						font-size: get_vw(38);
+						margin-bottom: get_vw(40);
+					}
+					@include pc{
+						font-size: 28px;
+						margin-bottom: 1em;
+					}
+				}
+				p{
+					@include sp{
+						margin-bottom: 1em;
+					}
+				}
+				.btn{
+					@include pc{
+						margin-top: 30px;
+						width:300px;
+					}
+				}
+			}
+		}
+		.faq{
+			background-color: #ebe5e1;
+			.inner{
+				@include sp{
+					padding: get_vw(60) 0 get_vw(80) 0;
+				}
+				@include pc{
+					width:700px;
+					padding:100px 0;
+				}
+				h2{
+					color: $brownColor;
+					text-align: center;
+					@include pc{
+						margin-bottom: 1em;
+					}
+				}
+				p.lead{
+					text-align: center;
+					@include sp{
+						margin-bottom: 1em;
+					}
+				}
+				.btn{
+					margin:0 auto;
+					@include pc{
+						margin-top: 30px;
+						width:300px;
+					}
+				}
+				
+			}
+		}
+
+		.contact{
+			.inner{
+				@include sp{
+					margin:0 get_vw(50);
+					padding: get_vw(60) 0 get_vw(80) 0;
+					text-align: center;
+				}
+				@include pc{
+					text-align: center;
+					padding: 150px 0;
+				}
+				h2{
+					color: $blueColor;
+					@include pc{
+						font-size: 28px;
+						line-height: 1;
+						margin-bottom: 1em;
+					}
+				}
+				p{
+					@include sp{
+						margin-bottom: 1em;
+					}
+				}
+				.btn{
+					margin:0 auto;
+					@include pc{
+						margin-top: 30px;
+						width:300px;
+					}
+				}
+			}
+		}
+
+		.bgimage{
+			-webkit-background-size: cover;
+			background-size: cover;
+			width: 100%;
+			@include sp{
+				position: relative;
+				height: 60vh;
+			}
+			@include pc{
+				background-attachment: fixed;
+			}
+			&.bgimage_001{
+				background-image: url(../images/top/bg_photo_001.jpg);
+				background-position: center;
+				@include pc{
+					height: 800px;
+				}
+			}
+			&.bgimage_002{
+				background-image: url(../images/top/bg_photo_002.jpg);
+				background-position: center;
+				@include sp{
+					background-position: left center;
+				}
+				@include pc{
+					height: 800px;
+				}
+			}
+			// &:before{
+			// 	@include sp{
+			// 		content: '';
+			// 		display: block;
+			// 		position: fixed;
+			// 		top: 0;
+			// 		left: 0;
+			// 		width: 100%;
+			// 		height: 60vh;
+			// 		z-index: -1;
+			// 		background-repeat:no-repeat;
+			// 		background-position:50% 100%;
+			// 		background-size:cover;
+			// 	}
+			// }
+		}
+	}
+}

@@ -1,0 +1,551 @@
+@media (max-width: 768px) {
+  .disp_pc {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .disp_pc {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .disp_sp {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .disp_sp {
+    display: none;
+  }
+}
+
+#top .container {
+  width: 100%;
+  overflow: hidden;
+}
+#top .container header {
+  z-index: 50;
+}
+@media (max-width: 768px) {
+  #top .container header {
+    position: absolute;
+    height: auto;
+  }
+}
+@media (min-width: 769px) {
+  #top .container header {
+    position: absolute;
+    width: 100%;
+  }
+}
+#top .container header .inner .logo {
+  display: none;
+}
+@media (min-width: 769px) {
+  #top .container header .inner nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 330px;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .inner {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .sp_fv {
+    height: 100vh;
+  }
+}
+#top .container .mv {
+  position: relative;
+  width: 100%;
+}
+#top .container .mv h1 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  #top .container .mv h1 {
+    width: 60vw;
+    height: 49.5vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .mv h1 {
+    width: 380px;
+    height: 312px;
+  }
+}
+#top .container .mv h1 img {
+  width: 100%;
+  height: auto;
+}
+#top .container .mv .mv_slider {
+  position: relative;
+}
+@media (min-width: 769px) {
+  #top .container .mv .mv_slider {
+    width: 100%;
+  }
+}
+#top .container .mv .mv_slider img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  #top .container section h2 {
+    line-height: 1;
+    font-size: 5.0666666667vw;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+#top .container .reservation {
+  background-color: #bfb3a8;
+}
+@media (max-width: 768px) {
+  #top .container .reservation {
+    padding: 5vw 0;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner {
+    width: 930px;
+    margin: 0 auto;
+  }
+}
+#top .container .reservation .inner h2 {
+  color: #42210f;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner h2 {
+    float: left;
+    font-size: 20px;
+    display: inline;
+    margin-top: 22px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner {
+    font-size: 3.2vw;
+    width: auto;
+    margin: 0 20vw 5vw 20vw;
+  }
+  #top .container .reservation .inner .reservation_search .reservation_search_inner:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px;
+    height: 60px;
+    vertical-align: middle;
+  }
+}
+#top .container .reservation .inner .reservation_search .reservation_search_inner select {
+  background-color: #fff;
+  border: none;
+  color: #000;
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner select {
+    font-size: 3.4666666667vw;
+    padding: 1.3333333333vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner select {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner .undecided {
+    margin-top: 1.3333333333vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner .undecided {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+#top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
+  background-color: #42210f;
+  border: none;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 1vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
+    border-radius: 5px;
+    line-height: 1;
+    padding: 15px 0;
+    width: 200px;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex .reservation_search_inner_table {
+    margin-right: 2.6666666667vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex .reservation_search_inner_table {
+    display: inline-block;
+    width: 70px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .introduction .inner {
+    padding: 9.3333333333vw 0 10.6666666667vw 0;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .introduction .inner p {
+    margin-left: 6.6666666667vw;
+    margin-right: 6.6666666667vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner p {
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+  }
+}
+#top .container .introduction .inner p.lead {
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #top .container .introduction .inner p.lead {
+    font-size: 3.7333333333vw;
+    line-height: 1.75;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner p.lead {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 1em;
+  }
+}
+#top .container .rooms {
+  overflow-x: hidden;
+}
+@media (min-width: 769px) {
+  #top .container .rooms {
+    padding-bottom: 180px;
+  }
+}
+#top .container .rooms .rooms_slider {
+  position: relative;
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider {
+    max-height: 550px;
+  }
+}
+#top .container .rooms .rooms_slider .slick-list {
+  overflow: visible;
+}
+@media (max-width: 768px) {
+  #top .container .rooms .rooms_slider .rooms_wrap {
+    padding: 0 3vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider .rooms_wrap {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+#top .container .rooms .rooms_slider .rooms_wrap figure img {
+  width: 100%;
+  height: auto;
+}
+#top .container .rooms .rooms_slider .rooms_wrap figure .text_box {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 768px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box {
+    position: relative;
+    padding: 3.3333333333vw;
+    top: -14vw;
+    right: -3vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 25px 30px;
+    width: 360px;
+    right: -50px;
+    bottom: -60px;
+    -webkit-box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1), 5px 5px 5px 5px rgba(10, 10, 10, 0.02);
+            box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1), 5px 5px 5px 5px rgba(10, 10, 10, 0.02);
+  }
+}
+#top .container .rooms .rooms_slider .rooms_wrap figure .text_box h2 {
+  color: #729599;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box h2 {
+    font-size: 4vw;
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box h2 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box p {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .rooms .rooms_slider .rooms_wrap figure .text_box p {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 1.5em;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .location {
+    background-image: url(../images/top/location_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px auto;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .location .inner {
+    margin: 0 6.6666666667vw;
+    padding: 8vw 0 10.6666666667vw 0;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .location .inner {
+    width: 780px;
+    padding: 150px 0;
+  }
+}
+#top .container .location .inner h2 {
+  color: #729599;
+}
+@media (max-width: 768px) {
+  #top .container .location .inner h2 {
+    font-size: 5.0666666667vw;
+    margin-bottom: 5.3333333333vw;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .location .inner h2 {
+    font-size: 28px;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .location .inner p {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .location .inner .btn {
+    margin-top: 30px;
+    width: 300px;
+  }
+}
+#top .container .faq {
+  background-color: #ebe5e1;
+}
+@media (max-width: 768px) {
+  #top .container .faq .inner {
+    padding: 8vw 0 10.6666666667vw 0;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .faq .inner {
+    width: 700px;
+    padding: 100px 0;
+  }
+}
+#top .container .faq .inner h2 {
+  color: #7a7067;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  #top .container .faq .inner h2 {
+    margin-bottom: 1em;
+  }
+}
+#top .container .faq .inner p.lead {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #top .container .faq .inner p.lead {
+    margin-bottom: 1em;
+  }
+}
+#top .container .faq .inner .btn {
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  #top .container .faq .inner .btn {
+    margin-top: 30px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .contact .inner {
+    margin: 0 6.6666666667vw;
+    padding: 8vw 0 10.6666666667vw 0;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .contact .inner {
+    text-align: center;
+    padding: 150px 0;
+  }
+}
+#top .container .contact .inner h2 {
+  color: #729599;
+}
+@media (min-width: 769px) {
+  #top .container .contact .inner h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 768px) {
+  #top .container .contact .inner p {
+    margin-bottom: 1em;
+  }
+}
+#top .container .contact .inner .btn {
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  #top .container .contact .inner .btn {
+    margin-top: 30px;
+    width: 300px;
+  }
+}
+#top .container .bgimage {
+  background-size: cover;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #top .container .bgimage {
+    position: relative;
+    height: 60vh;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .bgimage {
+    background-attachment: fixed;
+  }
+}
+#top .container .bgimage.bgimage_001 {
+  background-image: url(../images/top/bg_photo_001.jpg);
+  background-position: center;
+}
+@media (min-width: 769px) {
+  #top .container .bgimage.bgimage_001 {
+    height: 800px;
+  }
+}
+#top .container .bgimage.bgimage_002 {
+  background-image: url(../images/top/bg_photo_002.jpg);
+  background-position: center;
+}
+@media (max-width: 768px) {
+  #top .container .bgimage.bgimage_002 {
+    background-position: left center;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .bgimage.bgimage_002 {
+    height: 800px;
+  }
+}

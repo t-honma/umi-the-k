@@ -1,0 +1,371 @@
+#rooms{
+	.container{
+		.page_contents{
+			section{
+				.inner{}
+				&.intro{
+					@include sp{
+						margin:0 auto get_vw(55) auto;
+					}
+					@include pc{
+						margin:100px auto 45px auto;
+					}
+					h2{
+						line-height:1;
+						text-align: center;
+						@include sp{
+							font-size: get_vw(30);
+							margin-bottom: 1em;
+						}
+						@include pc{
+							font-size: 26px;
+							margin-bottom: 40px;
+						}
+					}
+					p{
+						@include pc{
+							text-align: center;
+						}
+					}
+				}
+				&.photo{
+					@include sp{
+						margin-bottom: get_vw(100);
+					}
+					@include pc{
+						margin-bottom: 50px;
+					}
+					.inner{
+						figure{
+							img{
+								display: block;
+								width: 100%;
+								height: auto;
+							}
+						}
+						.main_photo{}
+						.sub_photo{
+							display: flex;
+							justify-content: space-between;
+							@include sp{
+								margin-top: 2.5vw;
+							}
+							@include pc{
+								margin-top: 20px;
+							}
+							figure{
+								img{
+									object-fit: cover;
+									@include sp{
+										height: get_vw(260);
+									}
+									@include pc{
+										height: 340px;
+									}
+								}
+								.sub_photo_001{
+									@include sp{
+										width: get_vw(420);
+									}
+									@include pc{
+										width: 540px;
+									}
+								}
+								.sub_photo_002{
+									@include sp{
+										width: get_vw(210);
+									}
+									@include pc{
+										width: 280px;
+									}
+								}
+								.sub_photo_003{
+									@include sp{
+										width: get_vw(210);
+									}
+									@include pc{
+										width: 280px;
+									}
+								}
+								.sub_photo_004{
+									@include sp{
+										width: get_vw(420);
+									}
+									@include pc{
+										width: 540px;
+									}
+								}
+							}
+						}
+					}
+				}
+				&.facilities{
+					@include sp{
+						margin-bottom: get_vw(60);
+					}
+					@include pc{
+						margin-bottom: 70px;
+					}
+					.inner{
+						.facilities_wrap{
+							h3{
+								border-bottom: 1px solid #000;
+								@include sp{
+									font-size: get_vw(28);
+									margin-bottom: 0.5em;
+									padding-bottom: 0.5em;
+								}
+								@include pc{
+									font-size: 20px;
+									margin-bottom: 0.5em;
+									padding-bottom: 0.5em;
+								}
+							}
+							&:first-child{
+								@include sp{
+									margin-bottom: get_vw(50);
+								}
+								@include pc{
+									margin-bottom: 50px;
+								}
+							}
+							p{
+								word-break: break-all;
+							}
+						}
+					}
+				}
+				&.reservation{
+					.inner{
+						background-color: #e6dfd9;
+						@include sp{
+							padding:5vw;
+						}
+						@include pc{
+							padding: 50px 0 55px 0;
+						}
+						h3{
+							color:#7a7067;
+							line-height: 1;
+							text-align: center;
+							@include sp{
+								font-size: get_vw(38);
+								margin-bottom: 0.6em;
+							}
+							@include pc{
+								font-size: 28px;
+								margin-bottom: 0.8em;
+							}
+						}
+						a{
+							background-color: #7a7067;
+							color: #fff;
+							font-weight: 600;
+							line-height: 1;
+							margin-left: auto;
+							margin-right: auto;
+							text-align: center;
+							@include sp{
+								font-size:get_vw(26);
+								padding: 1.2em 0;
+							}
+							@include pc{
+								font-size: 20px;
+								padding: 1.2em 0;
+								width: 550px;
+							}
+						}
+						p.small{
+							text-align: center;
+							@include sp{
+								font-size: 80%;
+								margin-top: 1em;
+							}
+							@include pc{
+								font-size: 80%;
+								margin-top: 1em;
+							}
+						}
+					}
+				}
+				&.rooms_index{
+					.rooms_wrap{
+						@include sp{
+							margin: 0 0 get_vw(10) 0;
+						}
+						@include pc{
+							margin: 0 auto 80px auto;
+							width: 840px;
+							height: 500px;
+						}
+						figure{
+							@include sp{
+								width: 100%;
+							}
+							@include pc{
+								position: relative;
+								margin: 0 auto;
+								width: 840px;
+							}
+							img{
+								position: relative;
+								height: auto;
+								@include sp{
+									width: get_vw(700);
+								}
+								@include pc{
+									width: 100%;
+									left: -80px;
+								}
+							}
+							.text_box{
+								background-color: rgba(255,255,255,0.75);
+								@include sp{
+									box-sizing: border-box;
+									padding: get_vw(30) get_vw(80) get_vw(30) get_vw(30);
+									width: get_vw(700);
+									position: relative;
+									top:get_vw(-70);
+									left: get_vw(50);
+								}
+								@include pc{
+									position: absolute;
+									box-sizing: border-box;
+									padding:30px;
+									width: 480px;
+									right: 0;
+									bottom:30px;
+									box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 5px 5px 5px 5px rgba(10,10,10,0.02);
+								}
+								h2{
+									color: $blueColor;
+									font-weight: 500;
+									@include sp{
+										font-size: get_vw(30);
+										margin-bottom: 0.5em;
+									}
+									@include pc{
+										font-size: 20px;
+										margin-bottom: 0.5em;
+									}
+								}
+								p{
+									@include sp{
+										margin-bottom: 1em;
+									}
+									@include pc{
+										font-size: 14px;
+										line-height: 2;
+										margin-bottom: 1em;
+									}
+								}
+							}
+						}
+						&:nth-child(2){
+							figure{
+								img{
+									@include sp{
+										left: get_vw(50);
+									}
+									@include pc{
+										left: auto;
+										right: -80px;
+									}
+								}
+								.text_box{
+									@include sp{
+										padding: get_vw(30) get_vw(30) get_vw(30) get_vw(80);
+										left: 0;
+									}
+									@include pc{
+										right: auto;
+										left: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.pager{
+				position: relative;
+				@include sp{
+					margin: get_vw(80) get_vw(50) 0 get_vw(50);
+				}
+				@include pc{
+					margin-top: 60px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 1000px;
+					height: 46px;
+				}
+				a{
+					background-repeat: no-repeat;
+					color: #000;
+					line-height: 1;
+					position: absolute;
+					@include sp{
+						-webkit-background-size: contain;
+						background-size: contain;
+						font-size: get_vw(28);
+						padding: 2.2vw 0;
+					}
+					@include pc{
+						font-size: 18px;
+						padding:14px 0;
+					}
+					&.prev{
+						background-image: url(../images/rooms/share/arrow_prev.png);
+						background-position: center left;
+						left: 0;
+						@include sp{
+							padding-left: 7vw;
+						}
+						@include pc{
+							padding-left: 50px;
+						}
+					}
+					&.next{
+						background-image: url(../images/rooms/share/arrow_next.png);
+						background-position: center right;
+						right: 0;
+						@include sp{
+							padding-right: 7vw;
+						}
+						@include pc{
+							padding-right: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.ishigaki{
+		.container{
+			header{
+				background-image: url(../images/rooms/ishigaki/ishigaki_mv.jpg);
+			}
+		}
+	}
+	&.mori{
+		.container{
+			header{
+				background-image: url(../images/rooms/mori/mori_mv.jpg);
+			}
+		}
+	}
+	&.umi{
+		.container{
+			header{
+				background-image: url(../images/rooms/umi/umi_mv.jpg);
+			}
+		}
+	}
+	&.index{
+		.container{
+			header{
+				background-image: url(../images/rooms/share/rooms_mv.jpg);
+			}
+		}
+	}
+}

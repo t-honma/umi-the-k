@@ -1,0 +1,94 @@
+#contact{
+	background-color: #fff;
+	.container{
+		header{
+			background-image: url(../images/location/mv.jpg);
+		}
+
+		.page_contents{
+			section{
+				.inner{
+					p{
+						@include pc{
+							text-align: center;
+						}
+					}
+					dl{
+						width: 100%;
+						@include sp{
+							font-size: get_vw(24);
+							line-height: 1.75;
+							margin:get_vw(50) 0;
+						}
+						@include pc{
+							font-size: 14px;
+							line-height: 2;
+							letter-spacing:0.05em;
+							margin: 50px 0;
+						}
+						dt{
+							font-weight:normal;
+							span{
+								margin-left: 0.5em;
+								&.red{
+									color: #ff0000;
+								}
+								&.gray{
+									color: #aaa;
+								}
+							}
+						}
+						dd{
+							@include sp{
+								margin-bottom: get_vw(30);
+							}
+							@include pc{
+								margin-bottom: 20px;
+							}
+							input[type="text"],input[type="email"],textarea{
+								background-color: #f2efec;
+								border:none;
+								box-sizing:border-box;
+								width: 100%;
+								@include sp{
+									font-size: get_vw(24);
+									line-height: 1.75;
+									padding:get_vw(15);
+								}
+								@include pc{
+									font-size: 14px;
+									line-height: 2;
+									letter-spacing:0.05em;
+									padding:10px;
+									width: 100%;
+								}
+							}
+							textarea{
+								@include pc{
+									width: 100% !important;
+									height: 200px !important;
+								}
+							}
+						}
+					}
+					.btn{
+						border:0;
+						margin: 0 auto;
+						@include sp{
+							width: 100%;
+						}
+						@include pc{
+							width: 300px;
+						}
+
+						&.thanks{
+							@include pc{
+								margin-top: 2em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

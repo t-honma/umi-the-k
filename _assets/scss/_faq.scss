@@ -1,0 +1,90 @@
+#faq{
+	.container{
+		header{
+			background-image: url(../images/faq/mv.jpg);
+			@include pc{
+				background-position: center bottom;
+			}
+		}
+		.page_contents{
+			section{
+				.inner{
+					h2{
+						text-align: center;
+						@include sp{
+							font-size: 4vw;
+							margin-bottom: 1.5em;
+						}
+						@include pc{
+							font-size: 20px;
+							margin-bottom: 2em;
+						}
+					}
+					table{
+						th{
+							color: #729599;
+							font-weight: normal;
+							text-align: left;
+							@include pc{
+								padding-bottom: 5px;
+							}
+							p{
+								@include sp{
+									padding-left:1.5em;
+								}
+								@include pc{
+									font-size:15px;
+								}
+								&:before{
+									content: "Q.";
+									display: inline-block;
+									position: absolute;
+									@include sp{
+										left:0;
+									}
+									@include pc{
+										left: -1.2em;
+									}
+								}
+							}
+						}
+						td{
+							@include sp{
+								padding-bottom: 7vw;
+							}
+							@include pc{
+								padding-bottom: 40px;
+							}
+							// &:last-child{
+							// 	padding-bottom: 0;
+							// }
+							p{
+								@include sp{
+									padding-left:1.5em;
+								}
+								@include pc{
+									font-size:15px;
+								}
+								&:before{
+									content: "A.";
+									display: inline-block;
+									position: absolute;
+									@include sp{
+										left:0;
+									}
+									@include pc{
+										left: -1.2em;
+									}
+								}
+								a{
+									color: #729599;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@import "mq";
+
+.sub{
+	.container{
+		@include sp{
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.page_contents{
+			@include sp{
+				padding:get_vw(50) 0 get_vw(150) 0;
+			}
+			@include pc{
+				padding:70px 0 70px 0;
+			}
+			h1{
+				color:$blueColor;
+				line-height: 1;
+				text-align: center;
+				@include sp{
+					font-size: get_vw(38);
+					margin-bottom: get_vw(70);
+				}
+				@include pc{
+					font-size: 40px;
+					margin-bottom: 100px;
+				}
+			}
+			section{
+				.inner{
+					position: relative;
+					@include sp{
+						margin-left: get_vw(50);
+						margin-right: get_vw(50);
+					}
+					@include pc{
+						margin-left: auto;
+						margin-right: auto;
+						width: 840px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "location";
+@import "rooms";
+@import "faq";
+@import "contact";
+

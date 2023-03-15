@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+
+@mixin se{
+    @media (max-width:320px){
+        @content;
+    }
+}
+@mixin sp{
+    @media (max-width:768px){
+        @content;
+    }
+}
+@mixin pc{
+    @media (min-width:769px){
+        @content;
+    }
+}
+@mixin mq_ie{
+    @media all and (-ms-high-contrast: none){
+        @content;
+    }
+}
+
+@function get_vw($size, $viewport:750){
+  @return ($size / $viewport)*100vw;
+}
+@function get_vh($size, $viewport:750){
+  @return ($size / $viewport)*100vh;
+}
+
+$fontColor: #393939;
+$blueColor: #729599;
+$brownColor: #7a7067;
+
+@mixin AbsXCenYCen() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin hover_anime() {
+  transition: 0.3s;
+}
+
+
+.disp_pc{
+  @include sp{
+    display:none;
+  }
+  @include pc{
+    display:block;
+  }
+}
+.disp_sp{
+  @include sp{
+    display:block;
+  }
+  @include pc{
+    display:none;
+  }
+}
