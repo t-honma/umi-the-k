@@ -426,6 +426,11 @@
     font-size: 14px;
   }
 }
+@media (min-width: 769px) {
+  #location .container .page_contents section.access .inner .transit .transit_wrap p {
+    width: 400px;
+  }
+}
 @media (max-width: 768px) {
   #location .container .page_contents section.access .inner .transit .transit_wrap p .disp_pc {
     display: none;
@@ -476,6 +481,8 @@
 }
 #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root table {
   border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (max-width: 768px) {
   #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root table {
@@ -503,6 +510,7 @@
   }
 }
 #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root table td p {
+  width: auto;
   padding: 0 0 0 1.2em;
 }
 @media (max-width: 768px) {
@@ -521,6 +529,11 @@
   display: inline-block;
   text-indent: -1.2em;
 }
+@media (min-width: 769px) {
+  #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root table.root_map_02 {
+    width: 400px;
+  }
+}
 @media (max-width: 768px) {
   #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root .root_map {
     width: 90%;
@@ -532,9 +545,26 @@
 @media (min-width: 769px) {
   #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root .root_map {
     position: absolute;
+  }
+}
+@media (min-width: 769px) {
+  #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root .root_map.root_map_01 {
     width: 380px;
     height: auto;
     top: 105px;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root .root_map.root_map_02 {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  #location .container .page_contents section.access .inner .transit .transit_wrap.kourijima_root .root_map.root_map_02 {
+    width: 380px;
+    height: auto;
+    top: 200px;
     right: 0;
   }
 }

@@ -149,7 +149,7 @@ header .inner .logo img {
 }
 @media (max-width: 768px) {
   header .inner .sp_menu,
-header .inner .sp_close {
+  header .inner .sp_close {
     width: 10.6666666667vw;
     height: 8vw;
     position: absolute;
@@ -160,7 +160,7 @@ header .inner .sp_close {
 }
 @media (min-width: 769px) {
   header .inner .sp_menu,
-header .inner .sp_close {
+  header .inner .sp_close {
     display: none;
   }
 }
@@ -313,6 +313,26 @@ footer .inner p.address {
     font-size: 70%;
     line-height: 1.5;
   }
+}
+footer .inner p.typhoon {
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  footer .inner p.typhoon {
+    margin-bottom: 1.5em;
+    text-align: left;
+  }
+}
+@media (min-width: 769px) {
+  footer .inner p.typhoon {
+    font-size: 14px;
+    margin-bottom: 1em;
+    width: 600px;
+  }
+}
+footer .inner p.typhoon a {
+  color: #fff;
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   footer .inner .btn_wrap {

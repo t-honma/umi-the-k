@@ -370,6 +370,7 @@ body{
 			background-color: #ebe5e1;
 			.inner{
 				@include sp{
+					margin:0 get_vw(50);
 					padding: get_vw(60) 0 get_vw(80) 0;
 				}
 				@include pc{

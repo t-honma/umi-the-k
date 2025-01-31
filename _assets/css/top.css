@@ -439,6 +439,7 @@
 }
 @media (max-width: 768px) {
   #top .container .faq .inner {
+    margin: 0 6.6666666667vw;
     padding: 8vw 0 10.6666666667vw 0;
   }
 }

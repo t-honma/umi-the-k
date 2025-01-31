@@ -297,6 +297,9 @@
 									}
 								}
 								p{
+									@include pc{
+										width: 400px;
+									}
 									.disp_pc{
 									  @include sp{
 									    display:none;
@@ -354,6 +357,7 @@
 									// }
 									table{
 										border-collapse: collapse;
+										box-sizing: border-box;
 										@include sp{
 											margin:8vw 0;
 										}
@@ -375,6 +379,7 @@
 												}
 											}
 											p{
+												width: auto;
 												padding: 0 0 0 1.2em;
 												@include sp{
 													font-size: 3.2vw;
@@ -390,6 +395,11 @@
 												}
 											}
 										}
+										&.root_map_02{
+											@include pc{
+												width: 400px;
+											}
+										}
 									}
 									.root_map{
 										@include sp{
@@ -400,10 +410,25 @@
 										}
 										@include pc{
 											position: absolute;
-											width: 380px;
-											height: auto;
-											top:105px;
-											right:0;
+										}
+										&.root_map_01{
+											@include pc{
+												width: 380px;
+												height: auto;
+												top:105px;
+												right:0;
+											}
+										}
+										&.root_map_02{
+											@include sp{
+												width: 100%;
+											}
+											@include pc{
+												width: 380px;
+												height: auto;
+												top:200px;
+												right:0;
+											}
 										}
 									}
 

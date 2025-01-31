@@ -1,0 +1,22 @@
+function doPost(e){
+	var sheet = SpreadsheetApp.openById(e.parameter.SPREADSHEET_ID).getSheetByName(e.parameter.SHEET_NAME);
+	var last_row = sheet.getLastRow();
+	var ignore_array = ['SPREADSHEET_ID', 'SHEET_NAME', 'callback', '_'];
+	var form_data = {};
+	for(var key in e.parameter){
+		if(ignore_array.indexOf(key) === -1){
+			form_data[key] = e.parameter[key];
+		};
+	};
+	var headers = sheet.getRange(1,1,1,sheet.getLastColumn()).getValues()[0];
+	for(var key in form_data){
+		for(var i=0;i<headers.length;i++){
+			if(headers[i] === key){
+				sheet.getRange(last_row+1,i+1).setValue(form_data[key]);
+				break;
+			};
+		};
+	};
+	var return_json = JSON.stringify({work:'success'});
+	return ContentService.createTextOutput( '(' + return_json + ')').setMimeType(ContentService.MimeType.JAVASCRIPT);
+};

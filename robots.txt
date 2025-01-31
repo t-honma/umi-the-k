@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /*?sa=
+
+Sitemap: https://www.umithek.com/sitemap.xml
