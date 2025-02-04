@@ -291,6 +291,34 @@
     margin-bottom: 1em;
   }
 }
+#top .container .introduction .inner .closed_info {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+@media (max-width: 768px) {
+  #top .container .introduction .inner .closed_info {
+    width: 90%;
+    margin: 0 auto 10vw auto;
+    padding: 5vw 0;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner .closed_info {
+    width: 800px;
+    margin: 0 auto 50px auto;
+    padding: 20px 0;
+  }
+}
+#top .container .introduction .inner .closed_info h2 {
+  text-align: center;
+  font-size: 110%;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner .closed_info h2 {
+    /*font-size: 16px;*/
+  }
+}
 #top .container .rooms {
   overflow-x: hidden;
 }

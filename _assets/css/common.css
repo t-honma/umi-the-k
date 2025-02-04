@@ -247,6 +247,7 @@ footer .inner {
     width: 1000px;
     margin: 0 auto;
     padding: 40px 0 50px 0;
+    min-height: 450px;
   }
 }
 footer .inner .logo {

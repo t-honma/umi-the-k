@@ -1140,6 +1140,11 @@
   background-image: url(../images/location/mv.jpg);
 }
 @media (min-width: 769px) {
+  #contact .container .page_contents {
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 769px) {
   #contact .container .page_contents section .inner p {
     text-align: center;
   }

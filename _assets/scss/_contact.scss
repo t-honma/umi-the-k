@@ -6,6 +6,9 @@
 		}
 
 		.page_contents{
+			@include pc{
+				margin-bottom: 150px;
+			}
 			section{
 				.inner{
 					p{
