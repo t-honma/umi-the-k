@@ -418,3 +418,8 @@ footer .inner .instagram_wrap a img {
   width: 100%;
   height: auto;
 }
+@media (min-width: 769px) {
+  footer .inner .instagram_wrap iframe {
+    height: 300px;
+  }
+}

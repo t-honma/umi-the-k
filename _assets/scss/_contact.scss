@@ -53,6 +53,7 @@
 								border:none;
 								box-sizing:border-box;
 								width: 100%;
+								max-width: inherit;
 								@include sp{
 									font-size: get_vw(24);
 									line-height: 1.75;

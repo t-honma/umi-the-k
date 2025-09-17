@@ -875,7 +875,7 @@
 @media (min-width: 769px) {
   #rooms .container .page_contents section.rooms_index .rooms_wrap figure img {
     width: 100%;
-    left: -80px;
+    right: -80px;
   }
 }
 #rooms .container .page_contents section.rooms_index .rooms_wrap figure .text_box {
@@ -899,7 +899,7 @@
             box-sizing: border-box;
     padding: 30px;
     width: 480px;
-    right: 0;
+    left: 0;
     bottom: 30px;
     -webkit-box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1), 5px 5px 5px 5px rgba(10, 10, 10, 0.02);
             box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1), 5px 5px 5px 5px rgba(10, 10, 10, 0.02);
@@ -940,8 +940,8 @@
 }
 @media (min-width: 769px) {
   #rooms .container .page_contents section.rooms_index .rooms_wrap:nth-child(2) figure img {
-    left: auto;
-    right: -80px;
+    right: auto;
+    left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -952,8 +952,8 @@
 }
 @media (min-width: 769px) {
   #rooms .container .page_contents section.rooms_index .rooms_wrap:nth-child(2) figure .text_box {
-    right: auto;
-    left: 0;
+    left: auto;
+    right: -80px;
   }
 }
 #rooms .container .page_contents .pager {
@@ -1023,13 +1023,13 @@
   }
 }
 #rooms.ishigaki .container header {
-  background-image: url(../images/rooms/ishigaki/ishigaki_mv.jpg);
+  background-image: url(../images/rooms/ishigaki/mv@2x.jpg);
 }
 #rooms.mori .container header {
-  background-image: url(../images/rooms/mori/mori_mv.jpg);
+  background-image: url(../images/rooms/mori/mv@2x.jpg);
 }
 #rooms.umi .container header {
-  background-image: url(../images/rooms/umi/umi_mv.jpg);
+  background-image: url(../images/rooms/umi/mv@2x.jpg);
 }
 #rooms.index .container header {
   background-image: url(../images/rooms/share/rooms_mv.jpg);
@@ -1195,6 +1195,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  max-width: inherit;
 }
 @media (max-width: 768px) {
   #contact .container .page_contents section .inner dl dd input[type=text], #contact .container .page_contents section .inner dl dd input[type=email], #contact .container .page_contents section .inner dl dd textarea {

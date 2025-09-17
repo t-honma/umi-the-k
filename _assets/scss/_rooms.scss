@@ -215,7 +215,7 @@
 								}
 								@include pc{
 									width: 100%;
-									left: -80px;
+									right: -80px;
 								}
 							}
 							.text_box{
@@ -233,7 +233,7 @@
 									box-sizing: border-box;
 									padding:30px;
 									width: 480px;
-									right: 0;
+									left: 0;
 									bottom:30px;
 									box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 5px 5px 5px 5px rgba(10,10,10,0.02);
 								}
@@ -268,8 +268,8 @@
 										left: get_vw(50);
 									}
 									@include pc{
-										left: auto;
-										right: -80px;
+										right: auto;
+										left: 0;
 									}
 								}
 								.text_box{
@@ -278,8 +278,8 @@
 										left: 0;
 									}
 									@include pc{
-										right: auto;
-										left: 0;
+										left: auto;
+										right: -80px;
 									}
 								}
 							}
@@ -343,21 +343,21 @@
 	&.ishigaki{
 		.container{
 			header{
-				background-image: url(../images/rooms/ishigaki/ishigaki_mv.jpg);
+				background-image: url(../images/rooms/ishigaki/mv@2x.jpg);
 			}
 		}
 	}
 	&.mori{
 		.container{
 			header{
-				background-image: url(../images/rooms/mori/mori_mv.jpg);
+				background-image: url(../images/rooms/mori/mv@2x.jpg);
 			}
 		}
 	}
 	&.umi{
 		.container{
 			header{
-				background-image: url(../images/rooms/umi/umi_mv.jpg);
+				background-image: url(../images/rooms/umi/mv@2x.jpg);
 			}
 		}
 	}

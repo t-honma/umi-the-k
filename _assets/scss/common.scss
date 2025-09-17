@@ -358,6 +358,11 @@ footer{
 					height: auto;
 				}
 			}
+			iframe{
+				@include pc{
+					height: 300px;
+				}
+			}
 		}
 	}
 }
