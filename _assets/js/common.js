@@ -32,7 +32,7 @@ var _html =
 		'<p class="tel">Tel／Fax： 0980-56-3997 <br class="disp_sp">（電話でお問い合わせ 10:00〜18:00）</p>' +
 		'<p class="notice">※臨時休業・営業時間変更となる場合があります。<br>※時間外のお問い合わせにつきましては、下記CONTACT（お問い合わせ）よりお願いいたします。<br>※お電話でのご予約は承っておりませんので、下記RESERVATION（宿泊予約）よりお待ちしております。</p>' +
 		'<div class="btn_wrap">' +
-			'<a href="https://www.jalan.net/yad378230/?roomCount=1&adultNum=2&distCd=01&stayYear=&stayMonth=&dateUndecided=1&stayDay=&screenId=UWW1701&callbackHistFlg=1&stayCount=1&rootCd=04m" target="_blank" class="btn footer"><span class="eng">RESERVATION</span>宿泊予約</a>' +
+			'<a href="https://www.489pro-x.com/ja/s/umithek/search/" target="_blank" class="btn footer"><span class="eng">RESERVATION</span>宿泊予約</a>' +
 			'<a href="/contact/" class="btn footer"><span class="eng">CONTACT</span>お問い合せ</a>' +
 		'</div>' +
 		'<div class="instagram_wrap">' +

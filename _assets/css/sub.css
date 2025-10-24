@@ -1060,13 +1060,15 @@
 }
 #faq .container .page_contents section .inner table th {
   color: #729599;
-  font-weight: normal;
   text-align: left;
 }
 @media (min-width: 769px) {
   #faq .container .page_contents section .inner table th {
     padding-bottom: 5px;
   }
+}
+#faq .container .page_contents section .inner table th p {
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   #faq .container .page_contents section .inner table th p {
@@ -1113,24 +1115,47 @@
     font-size: 15px;
   }
 }
-#faq .container .page_contents section .inner table td p:before {
+#faq .container .page_contents section .inner table td p:first-of-type:before {
   content: "A.";
   display: inline-block;
   position: absolute;
 }
 @media (max-width: 768px) {
-  #faq .container .page_contents section .inner table td p:before {
+  #faq .container .page_contents section .inner table td p:first-of-type:before {
     left: 0;
   }
 }
 @media (min-width: 769px) {
-  #faq .container .page_contents section .inner table td p:before {
+  #faq .container .page_contents section .inner table td p:first-of-type:before {
     left: -1.2em;
   }
 }
 #faq .container .page_contents section .inner table td p a {
   color: #729599;
   text-decoration: underline;
+}
+#faq .container .page_contents section .inner table td dl.cancel {
+  border-top: 1px solid #ddd;
+  font-size: 80%;
+  width: 250px;
+  margin: 20px 0;
+}
+#faq .container .page_contents section .inner table td dl.cancel dt,
+#faq .container .page_contents section .inner table td dl.cancel dd {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  width: 50%;
+  padding: 10px;
+  line-height: 1;
+}
+#faq .container .page_contents section .inner table td dl.cancel dt {
+  float: left;
+}
+#faq .container .page_contents section .inner table td dl.cancel dd {
+  float: right;
+  text-align: right;
 }
 
 #contact {
