@@ -22,7 +22,7 @@
                     }
                     table {
                         th {
-                            color: #729599;
+                            color: $blueColor;
                             text-align: left;
                             @include pc {
                                 padding-bottom: 5px;
@@ -79,7 +79,7 @@
                                     }
                                 }
                                 a {
-                                    color: #729599;
+                                    color: $blueColor;
                                     text-decoration: underline;
                                 }
                             }

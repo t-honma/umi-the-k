@@ -21,7 +21,8 @@
   }
 }
 
-html, body {
+html,
+body {
   color: #393939;
   font-family: YakuHanJP, "Noto Sans JP", sans-serif;
   letter-spacing: 0.08em;
