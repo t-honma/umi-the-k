@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+/* ===================================================================
+CSS information
+
+file name  : manual.css
+author     : Abilive
+style info : マニュアル用CSS
+=================================================================== */
+html,
+article,
+aside,
+audio,
+blockquote,
+body,
+dd,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+li,
+mark,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+time,
+ul,
+video,
+main,
+address,
+span {
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	font-feature-settings: 'palt';
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+q:after,
+q:before {
+	content: '';
+}
+
+embed,
+object {
+	vertical-align: top;
+}
+
+hr,
+legend {
+/ / display: none;
+}
+
+abbr,
+acronym,
+fieldset,
+img {
+	border: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+sup {
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
+img {
+	display: block;
+	line-height: 1;
+}
+
+i {
+	font-style: normal;
+}
+
+svg {
+	vertical-align: middle;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+main {
+	display: block;
+}
+
+nav,
+ul {
+	list-style: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+html {
+	background-color: #f5f5f5;
+}
+
+body {
+	width: 90%;
+	max-width: calc(1000px - 4rem);
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: #fff;
+	min-height: calc(100vh - 4rem);
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		width: calc(100% - 4rem);
+	}
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 3rem;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: .3em;
+}
+
+h2, h3 {
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+.wrpForm {
+	padding: 1rem;
+	background-color: #f5f5f5;
+}
+
+.wrpInforamation {
+	border-top: 1px solid #ccc;
+	padding-top: 3rem;
+}
+
+.wrpInforamation img {
+	width: 100%;
+	height: auto;
+}
+
+.wrpInforamation .red {
+	color: red;
+}
+
+.wrpInforamation table {
+	width: 100%;
+}
+
+.wrpInforamation table thead th {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	padding: .5rem;
+}
+
+.wrpInforamation table tbody td {
+	border: 1px solid #ccc;
+	padding: .5rem;
+	width: 70%;
+}
+
+.wrpInforamation table tbody th {
+	border: 1px solid #ccc;
+	padding: .5rem;
+	width: 30%;
+}
+
+.wrpInforamation.mt-5 {
+	margin-top: 5rem;
+}
+
+.wrpInforamation.mt-4 {
+	margin-top: 4rem;
+}
+
+.wrpInforamation.mt-3 {
+	margin-top: 3rem;
+}
+
+.wrpInforamation.mt-2 {
+	margin-top: 2rem;
+}
+
+.wrpInforamation pre {
+    border: 1px solid #222;
+    background-color: #333;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    position: relative;
+}
+.wrpInforamation .copy-button  {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: .5rem;
+}
+.wrpInforamation .mb-3 {
+    margin-bottom: 3rem !important;
+}
+
+.wrpInforamation .mb-2 {
+    margin-bottom: 2rem !important;
+}
+
+.wrpInforamation .mb-1 {
+    margin-bottom: 1rem !important;
+}
+
+.wrpInforamation .mt-3 {
+    margin-top: 3rem !important;
+}
+
+.wrpInforamation .mt-2 {
+    margin-top: 2rem !important;
+}
+
+.wrpInforamation .mt-1 {
+    margin-top: 1rem !important;
+}
+
+.wrpInforamation .mt-05 {
+    margin-top: .5rem !important;
+}
+
+.wrpInforamation .mb-05 {
+    margin-bottom: .5rem !important;
+}
+
+.wrpInforamation .pt-0 {
+    padding-top: 0 !important;
+}
+
+.wrpInforamation .bd-0 {
+    border: 0 !important;
+}
+
+.wrpInforamation .fw-b {
+	font-weight: bold;
+}
+
+.wrpInforamation .atn {
+	font-size: 0.8rem;
+}
+
+.wrpInforamation .borderBox {
+	border: 1px solid #ccc;
+	padding: 1rem;
+}
+
+.wrpInforamation .boxInfo dt, .wrpInforamation .boxInfo dd {
+	display: inline-block;
+}
+
+.wrpInforamation .boxInfo dt {
+	font-weight: bold;
+}

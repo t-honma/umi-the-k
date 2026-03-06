@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
     <head>
         <!-- Google tag (gtag.js) -->
@@ -33,6 +33,10 @@
         <link rel="stylesheet" type="text/css" href="_assets/css/top.css" />
         <link rel="stylesheet" type="text/css" href="_assets/css/slick-theme.css" />
         <link rel="stylesheet" type="text/css" href="_assets/css/slick.css" />
+
+        <link rel="stylesheet" href="/_assets/yproxSearchModule/css/yprox_searchForm_theme.css" />
+
+        <script src="_assets/yproxSearchModule/js/yprox_searchForm.js" defer></script>
     </head>
     <body id="top">
         <div class="container">
@@ -83,75 +87,87 @@
                     </div>
                 </div>
 
-                <!-- <section class="reservation">
-			<div class="inner">
-				<h2 class="eng">RESERVATION</h2>
-				<form name="ypro_search" class="obj_search" action="https://www7.489pro.com/asp/489/menu.asp?id=47000056&amp;ty=ser" method="post">
+                <section class="reservation">
+                    <div class="inner">
+                        <h2 class="eng">RESERVATION</h2>
+                        <!-- form 開始 -->
 
-					<div class="reservation_search">
-						<div class="reservation_search_inner">
-							<p>宿泊日</p>
-							<select name="obj_year" class="obj_year" tabindex="1">
-							<option value="" selected="selected">-</option>
-							</select>年
-							<select name="obj_month" class="obj_month" tabindex="2">
-							<option value="" selected="selected">-</option>
-							</select>月
-							<select name="obj_day" class="obj_day" tabindex="3">
-							<option value="" selected="selected">-</option>
-							</select>日
-							<div class="undecided">日付未定<input type="checkbox" name="obj_no_date" class="obj_no_date" value="1" /></div>
-						</div>
+                        <form name="yprox-searchForm" data-calendar class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/umithek/search/" method="get" role="search">
+                            <div class="inner">
+                                <!-- チェックイン日 開始 -->
+                                <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+                                    <label for="js-yprox-searchForm__checkin">宿泊日</label><br />
+                                    <span class="js-yprox-searchForm__boxCheckin-year">
+                                        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+                                            <option value="">-</option>
+                                        </select>
+                                        <em>年</em>
+                                    </span>
+                                    <span class="js-yprox-searchForm__boxCheckin-month">
+                                        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+                                            <option value="">-</option>
+                                        </select>
+                                        <em>月</em>
+                                    </span>
+                                    <span class="js-yprox-searchForm__boxCheckin-day">
+                                        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+                                            <option value="">-</option>
+                                        </select>
+                                        <em>日</em>
+                                    </span>
+                                    <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4" />
+                                    <input type="hidden" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin" />
+                                    <span class="js-yprox-searchForm__boxNoDate">
+                                        <label for="js-yprox-searchForm__noDate">日付未定</label>
+                                        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5" />
+                                    </span>
+                                </div>
+                                <!-- チェックイン日 終了 -->
 
-						<div class="reservation_search_inner flex">
+                                <!-- 人数 開始 -->
+                                <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+                                    <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+                                    <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+                                </div>
+                                <!-- 人数 終了 -->
 
-							<div class="reservation_search_inner_table">
-								<p>大人</p>
-								<select name="obj_per_num" class="obj_per_num" tabindex="4">
-								<option value="" selected="selected">-</option>
-								</select>名
-							</div>
+                                <!-- 泊数 開始 -->
+                                <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+                                    <label for="js-yprox-searchForm__nights">泊数</label>
+                                    <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+                                </div>
+                                <!-- 泊数 終了 -->
 
-							<div class="reservation_search_inner_table">
-								<p>泊数</p>
-								<select name="obj_stay_num" class="obj_stay_num" tabindex="5">
-								<option value="" selected="selected">-</option>
-								</select>泊
-							</div>
+                                <!-- 部屋数 開始 -->
+                                <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+                                    <label for="js-yprox-searchForm__rooms">部屋数</label>
+                                    <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+                                </div>
+                                <!-- 部屋数 終了 -->
 
-							<div class="reservation_search_inner_table">
-								<p>部屋数</p>
-								<select name="obj_room_num" class="obj_room_num" tabindex="6">
-								<option value="" selected="selected">-</option>
-								</select>部屋
-							</div>
-						</div>
+                                <!-- 検索ボタン 開始-->
+                                <input type="submit" value="空室検索" tabindex="9" accesskey="y" />
+                                <!-- 検索ボタン 終了 -->
+                            </div>
+                        </form>
 
-						<div class="reservation_search_inner">
-							<input type="submit" value="空室検索" tabindex="12" accesskey="y" />
-						</div>
-
-					</div>
-
-				</form>
-			</div>
-		</section> -->
+                        <!-- form 終了 -->
+                    </div>
+                </section>
             </div>
 
             <section class="introduction">
                 <div class="inner">
-                    <div class="closed_info">
+                    <div class="information">
                         <h2>【お知らせ】</h2>
                         <p>
                             平素よりUMI THE K古宇利島をご愛顧いただきまして誠にありがとうございます。<br />
-                            このたび、改修工事等の実施に伴い休館させていただいておりました当ホテルは、<br class="disp_pc" />下記の通り営業を再開いたします。<br />
-                            <br />
-                            営業再開日<br />
-                            <span style="font-size: 120%; font-weight: bold">2025年10月10日（金）</span><br />
-                            ※宿泊予約受付は2025年9月17日（水）から開始いたします。<br />
-                            <br />
+                            このたび、朝食付きプランのご予約受付を当ホームページからのご予約限定で再開いたしました。<br />
+                            &nbsp;<br />
+                            期間限定でお得に朝食付きプランをご予約できますので、この機会に是非ご宿泊をご検討くださいませ！<br />
                             皆さまのご来館を心よりお待ちしております。
                         </p>
+                        <a href="https://www.489pro-x.com/ja/s/umithek/search/?nights=1&plan=2&room=1&r_num=1&num=2&isPriceTotalPerson=false" class="btn blue" target="_blank">【１日１組限定プラン・朝食付き】<br class="disp_sp" />オープン記念・当サイト限定プラン</a>
                     </div>
 
                     <p class="lead">古宇利島の高台に佇む<br class="disp_sp" />3部屋のみのスモール・ラグジュアリー</p>

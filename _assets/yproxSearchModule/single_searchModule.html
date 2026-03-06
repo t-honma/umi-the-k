@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サイト内に1箇所のみフォームを設置する場合</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/manual.css">
+
+  <!--  必須javascript ファイル 開始-->
+  <script src="./js/yprox_searchForm.js" defer></script>
+  <!--  必須javascript ファイル 終了-->
+  <!--  デフォルトスタイル CSSファイル 開始-->
+  <link rel="stylesheet" href="./css/yprox_searchForm_theme.css">
+  <!--  デフォルトスタイル CSSファイル 終了-->
+
+</head>
+<body>
+
+<h1>サイト内に1箇所のみフォームを設置する場合</h1>
+
+<div class="wrpForm">
+
+  <!--form 開始-->
+  <form name="yprox-searchForm" data-calendar data-calender-position="top"
+        class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/"
+        method="get" role="search">
+    <div class="inner">
+
+      <!-- チェックイン日 開始 -->
+      <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+        <label for="js-yprox-searchForm__checkin">宿泊日</label><br>
+        <span class="js-yprox-searchForm__boxCheckin-year">
+        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+          <option value="">-</option>
+        </select>
+        <em>年</em>
+      </span>
+        <span class="js-yprox-searchForm__boxCheckin-month">
+        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+          <option value="">-</option>
+        </select>
+        <em>月</em>
+      </span>
+        <span class="js-yprox-searchForm__boxCheckin-day">
+        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+          <option value="">-</option>
+        </select>
+        <em>日</em>
+      </span>
+        <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4">
+        <input type="text" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin">
+        <span class="js-yprox-searchForm__boxNoDate">
+        <label for="js-yprox-searchForm__noDate">日付未定</label>
+        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5">
+      </span>
+      </div>
+      <!-- チェックイン日 終了 -->
+
+      <!-- 人数 開始 -->
+      <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+        <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+        <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+      </div>
+      <!-- 人数 終了 -->
+
+      <!-- 泊数 開始 -->
+      <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+        <label for="js-yprox-searchForm__nights">泊数</label>
+        <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+      </div>
+      <!-- 泊数 終了 -->
+
+      <!-- 部屋数 開始 -->
+      <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+        <label for="js-yprox-searchForm__rooms">部屋数</label>
+        <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+      </div>
+      <!-- 部屋数 終了 -->
+
+      <!-- 検索ボタン 開始-->
+      <input type="submit" value="空室検索" tabindex="9" accesskey="y">
+      <!-- 検索ボタン 終了 -->
+
+    </div>
+  </form>
+  <!--form 終了-->
+
+</div>
+
+<!-- コピー不要 説明用ブロック 開始-->
+<section class="wrpInforamation mt-3">
+  <h2>- ソースの設置手順について</h2>
+
+  <div class="mb-3">
+    <h3>1.必須Javascriptファイルの貼り付け</h3>
+    <p>以下のソースを<strong>head内の任意の場所</strong>に貼り付けます。</p>
+    <p class="atn">※ファイルの場所を変更する場合は、パスの変更も必要です。</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- 必須javascript ファイル 開始 --&gt;
+
+&lt;script src="./js/yprox_searchForm.js" defer&gt;&lt;/script&gt;
+
+&lt;!-- 必須javascript ファイル 終了 --&gt;
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <h3>2.HTMLソースの貼り付け</h3>
+    <p>以下のソースを<strong>body内の任意の場所</strong>に貼り付けます。</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- form 開始 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar data-calender-position="top" class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+  &ltdiv class="inner"&gt
+
+      &lt!-- チェックイン日 開始 --&gt
+      &ltdiv class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn"&gt
+        &ltlabel for="js-yprox-searchForm__checkin"&gt宿泊日&lt/label&gt&ltbr&gt
+        &ltspan class="js-yprox-searchForm__boxCheckin-year"&gt
+        &ltselect class="js-yprox-searchForm__checkin-year" tabindex="1"&gt
+          &ltoption value=""&gt-&lt/option&gt
+        &lt/select&gt
+        &ltem&gt年&lt/em&gt
+      &lt/span&gt
+        &ltspan class="js-yprox-searchForm__boxCheckin-month"&gt
+        &ltselect class="js-yprox-searchForm__checkin-month" tabindex="2"&gt
+          &ltoption value=""&gt-&lt/option&gt
+        &lt/select&gt
+        &ltem&gt月&lt/em&gt
+      &lt/span&gt
+        &ltspan class="js-yprox-searchForm__boxCheckin-day"&gt
+        &ltselect class="js-yprox-searchForm__checkin-day" tabindex="3"&gt
+          &ltoption value=""&gt-&lt/option&gt
+        &lt/select&gt
+        &ltem&gt日&lt/em&gt
+      &lt/span&gt
+        &ltinput type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4"&gt
+        &ltinput type="hidden" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin"&gt
+        &ltspan class="js-yprox-searchForm__boxNoDate"&gt
+        &ltlabel for="js-yprox-searchForm__noDate"&gt日付未定&lt/label&gt
+        &ltinput type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5"&gt
+      &lt/span&gt
+      &lt/div&gt
+      &lt!-- チェックイン日 終了 --&gt;
+
+
+      &lt!-- 人数 開始 --&gt
+      &ltdiv class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults"&gt
+        &ltlabel for="js-yprox-searchForm__adults"&gt1部屋あたりの人数&lt/label&gt
+        &ltselect name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"&gt&lt/select&gt
+      &lt/div&gt
+      &lt!-- 人数 終了 --&gt
+
+
+      &lt!-- 泊数 開始 --&gt
+      &ltdiv class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights"&gt
+        &ltlabel for="js-yprox-searchForm__nights"&gt泊数&lt/label&gt
+        &ltselect name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"&gt&lt/select&gt
+      &lt/div&gt
+      &lt!-- 泊数 終了 --&gt
+
+
+      &lt!-- 部屋数 開始 --&gt
+      &ltdiv class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms"&gt
+        &ltlabel for="js-yprox-searchForm__rooms"&gt部屋数&lt/label&gt
+        &ltselect name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"&gt&lt/select&gt
+      &lt/div&gt
+      &lt!-- 部屋数 終了 --&gt
+
+
+      &lt!-- 検索ボタン 開始--&gt
+      &ltinput type="submit" value="空室検索" tabindex="9" accesskey="y"&gt
+      &lt!-- 検索ボタン 終了 --&gt
+
+
+    &lt/div&gt
+
+&lt;/form&gt;
+
+&lt;!-- form 終了 --&gt;
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <h3>3.管理IDを変更する</h3>
+    <p>formタグのaction属性の<strong>「管理ID」</strong>の箇所を変更頂くことで検索する施設を設定できます。</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- formのaction属性の変更 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- formのaction属性の変更 --&gt;
+      </code></pre>
+    </div>
+    <figure class="mt-2">
+      <img src="./assets/images/id.jpg" alt="管理画面：「管理ID」の確認箇所" width="1091" height="809">
+      <figcaption class="atn mt-05">管理画面：「管理ID」の確認箇所</figcaption>
+    </figure>
+  </div>
+
+  <div>
+    <h3>4.<span class="red">【グループ施設契約の場合のみ】</span>グループ管理IDを変更する</h3>
+    <p>formタグのaction属性の<strong>「グループ管理ID」</strong>の箇所を変更頂くことで検索する施設を設定できます。</p>
+    <p>※通常の施設契約の場合は「s」のままで検索できます。（管理画面にグループ管理IDの表示はありません）</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- formのaction属性の変更 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/グループ管理ID/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- formのaction属性の変更 --&gt;
+      </code></pre>
+    </div>
+    <figure class="mt-2">
+      <img src="./assets/images/group_id.jpg" alt="管理画面：「グループ管理ID」の確認箇所" width="1091" height="809">
+      <figcaption class="atn mt-05">管理画面：「グループ管理ID」の確認箇所</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>- ソースの変更について</h2>
+  <p class="mb-3">HTMLのソースの変更は、<strong class="red">既に指定している各種class名や属性など変更しないようにご注意下さい。</strong><br>変更されますとエラー等により正しく検索できなくなります。</p>
+  <div class="mb-3">
+    <h3>・カレンダー表示・非表示の設定について</h3>
+    <p>カレンダー表示の設定は、<strong>data-calendar</strong>属性を<strong>form</strong>タグに追加することで行います。（初期設定は表示する）<br>
+      <small>※カレンダー内チェックアウト選択のテキストを表示しない場合は、<strong>data-hide-checkout-text</strong>属性を<strong>form</strong>タグに追加することで行います。</small>
+    </p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- カレンダー表示する場合 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- カレンダー表示する場合 終了 --&gt;
+
+
+&lt;!-- カレンダー表示しない場合 --&gt;
+
+&lt;form name="yprox-searchForm" class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- カレンダー表示しない場合 終了 --&gt;
+
+
+&lt;!-- カレンダー内チェックアウト選択のテキストを表示しない場合 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar data-hide-checkout-text class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- カレンダー内チェックアウト選択のテキストを表示しない場合 終了 --&gt;
+
+  </code></pre>
+  </div>
+  </div>
+  <div class="mb-3">
+    <h3>・日付未定の設定について</h3>
+    <p>日付未定の設定は、<strong>data-no-date</strong>属性を<strong>form</strong>タグに追加することで行います。（初期設定は日付未定無効）</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+&lt;!-- 日付未設定有効 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar data-no-date class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- 日付未設定有効 終了 --&gt;
+
+
+&lt;!-- 日付未設定無効 --&gt;
+
+&lt;form name="yprox-searchForm" data-calendar class="js-yprox-searchForm" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search"&gt;
+
+&lt;!-- 日付未設定無効 終了 --&gt;
+  </code></pre>
+  </div>
+  </div>
+  <div class="mb-3">
+    <h3>・人数・泊数・部屋数の削除について</h3>
+    <p>各HTMLタグを削除いただくことで削除できます。</p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+
+&lt;!-- 人数 削除開始 --&gt;
+&lt;div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults"&gt;
+  &lt;label for="js-yprox-searchForm__adults"&gt;1部屋あたりの人数&lt;/label&gt;
+  &lt;select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"&gt;&lt;/select&gt;
+&lt;/div&gt;
+&lt;!-- 人数 削除終了 --&gt;
+
+
+&lt;!-- 泊数 削除開始 --&gt;
+&lt;div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights"&gt;
+  &lt;label for="js-yprox-searchForm__nights"&gt;泊数&lt;/label&gt;
+  &lt;select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"&gt;&lt;/select&gt;
+&lt;/div&gt;
+&lt;!-- 泊数 削除終了 --&gt;
+
+
+&lt;!-- 部屋数 削除開始 --&gt;
+&lt;div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms"&gt;
+  &lt;label for="js-yprox-searchForm__rooms"&gt;部屋数&lt;/label&gt;
+  &lt;select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"&gt;&lt;/select&gt;
+&lt;/div&gt;
+&lt;!-- 部屋数 削除終了 --&gt;
+
+
+    </code></pre>
+    </div>
+  </div>
+  <div class="mb-3">
+    <h3>・表示言語の変更について</h3>
+    <h4 class="sst">カレンダー・JavaScript内で生成される文字の表示言語</h4>
+    <p>以下対応言語に関しては、ブラウザの設定言語ごとに自動で変更されます。それ以外の言語は英語表示となります。</p>
+    <dl class="mt-1 mb-1 borderBox">
+      <dt class="fw-b">対応言語</dt>
+      <dd>日本語・英語・韓国語・中国語（簡体字）・中国語（繁体字）</dd>
+    </dl>
+    <h4 class="sst">カレンダー・JavaScript内で生成される文字以外の表示言語</h4>
+    <p>WEBサイト制作者様側で各言語に翻訳をお願いいたします。</p>
+  </div>
+  <div class="mb-3">
+    <h3>・カレンダーの表示位置の変更について</h3>
+    <h4 class="sst">カレンダー表示位置の設定は、data-calendar-position属性を指定することで行います。（初期設定はtop）</h4>
+    <p>以下指定可能な表示位置です</p>
+    <dl class="mt-1 mb-1 borderBox">
+      <dt class="fw-b">指定可能な表示位置</dt>
+      <dd>- top：上揃え（デフォルト）</dd>
+      <dd>- bottom：下揃え</dd>
+      <dd>- top left：上左揃え</dd>
+      <dd>- bottom left：下左揃え</dd>
+      <dd>- top right：上右揃え</dd>
+      <dd>- bottom right：下右揃え</dd>
+      <dd>-
+        auto：js-yprox-searchFormクラスを指定したformの画面上の上下の位置を判別してinputの上下に自動で表示（form要素以外の要素の上下位置を指定したい場合は、form要素の先祖要素にjs-yprox-searchForm-parentクラスを付与してください）
+      </dd>
+    </dl>
+  </div>
+  <div class="mb-3">
+    <h3>・その他の変更につきまして</h3>
+    <p><strong>yprox_searchForm.jsをカスタム</strong>いただくことで一部変更可能です。</p>
+    <p>以下の数値を変更可能です。 <strong class="red">それ以外の変更は、対応外となりますのでご了承下さい。</strong></p>
+    <div class="js-copyButton wrpInforamation pt-0 bd-0">
+    <pre><code>
+  /**
+  * DOMContentLoaded
+  */
+document.addEventListener('DOMContentLoaded', function () {
+  const nInitDay = 1;		        // 日付(○日後) ※本日の場合は 0
+  const nInitPer = 2;		        // 人数
+  const nInitStay = 1;		        // 泊数
+  const nInitRoom = 1;		        // 部屋数
+
+  const nOpMaxYear = 2;			// 日付(今年も含めて何年分表示するか)
+  const nOpMaxPer = 10;		        // 人数(最大選択値)
+  const nOpMaxNights = 10;		// 泊数(最大選択値)
+  const nOpMaxRoom = 20;		// 部屋数(最大選択値)
+
+  let flagNoDate = false;		// 初期表示日付(日付なし)の場合は true 、formタグへ data-no-date を付与で日付なし
+
+  let flagCalendar = false;             // カレンダーを表示する場合は true 、formタグへ data-calendar を付与でカレンダー表示
+
+  const windowMobileWidth = 767; //モバイルの画面幅
+
+  const nInitCalendar = 2; //カレンダーの月の表示数
+  const nInitCalendarMobile = 1; //windowMobileWidth以下の画面幅でのカレンダーの月の表示数
+
+  const calendarSpanStr = ' - '; //カレンダーの日付の間に入れる文字 初期表示にしたい場合は null
+
+  const wr_wait = 600; // リサイズイベント発生時の待ち時間
+  </code></pre>
+  </div>
+  </div>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>- スタイルの変更について</h2>
+  <p>formに対して、「yprox_theme--default」クラスを付与しており、そちらでデフォルトのスタイル設定を行っております。<br>不要であれば「「yprox_theme--default」」は削除ください。※該当ファイル：yprox_searchForm_theme.css</p>
+  <p>スタイルのカスタマイズなどはWEBサイト制作者様側で設定をお願いします。その際、<strong>「yprox_theme--default」以外の既に指定している各種class名や属性など変更しないよう</strong>にご注意下さい。</p>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>- 利用プラグインについて</h2>
+  <p class="mb-1">以下のプラグインを利用しています。</p>
+  <dl class="boxInfo">
+    <dt>dayjs：</dt>
+    <dd><a href="https://day.js.org/" target="_blank" rel="noopener">https://day.js.org/</a></dd>
+    <br>
+    <dt>flatpickr：</dt>
+    <dd><a href="https://flatpickr.js.org/" target="_blank" rel="noopener">https://flatpickr.js.org/</a></dd>
+    <dd>
+  </dl>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>- 検索パラメータについて</h2>
+  <p>form要素内で指定してるパラメータ等は以下の通りです。</p>
+  <table class="mt-1">
+    <thead>
+    <tr>
+      <th>パラメータ</th>
+      <th>説明</th>
+    </tr>
+    <tbody>
+    <tr>
+      <th>method</th>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <th>action</th>
+      <td>検索結果ページのURL</td>
+    </tr>
+    <tr>
+      <th>dt</th>
+      <td>日付</td>
+    </tr>
+    <tr>
+      <th>num</th>
+      <td>人数</td>
+    </tr>
+    <tr>
+      <th>nights</th>
+      <td>泊数</td>
+    </tr>
+    <tr>
+      <th>r_num</th>
+      <td>部屋数</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>- その他不明点・不具合に関して</h2>
+  <p>以下にお問い合わせいただくか、管理画面>サポート>マニュアルをご確認ください。</p>
+  <div class="borderBox mt-1">
+    <p class="fw-b">【株式会社アビリブ】</p>
+    <p>〒 460-0008 愛知県名古屋市中区栄 5-28-12 名古屋若宮ビル 12F</p>
+    <p class="mb-1">TEL︓052-228-7822　FAX︓052-262-8042<br><span class="b">（電話でのサポート時間︓平日 9:00〜18:00）</span></p>
+    <p class="fw-b"></p>
+    <dl class="boxInfo">
+      <dt>URL:</dt>
+      <dd><a href="https://www.ab-net.co.jp/" target="_blank" rel="noopener">https://www.ab-net.co.jp/</a></dd>
+      <br>
+      <dt>予約システム URL:</dt>
+      <dd><a href="https://info.489pro-x.com/" target="_blank" rel="noopener">https://info.489pro-x.com/</a></dd>
+      <br>
+      <dt>メールサポート:</dt>
+      <dd>予約システム管理画⾯内「サポート」-「サポート窓口」お問い合わせフォーム</dd>
+    </dl>
+  </div>
+</section>
+<!-- コピー不要 説明用ブロック 終了-->
+
+</body>
+<script>
+  /** ソースコピー用のJavaScript */
+  const createCopyButton = () => {
+    const arrCopyElements = document.querySelectorAll('.js-copyButton');
+    arrCopyElements.forEach((element) => {
+      const button = document.createElement('button');
+      const pre = element.querySelector('pre');
+      button.classList.add('copy-button');
+      button.textContent = 'copy';
+      // element.insertBefore(button, element.firstChild);
+      pre.insertBefore(button, pre.firstChild);
+      button.addEventListener('click', (e) => {
+        if (navigator.clipboard) {
+          navigator.clipboard
+                  .writeText(e.target.nextElementSibling.innerText)
+                  .then(function() {
+                    e.target.textContent = 'copied';
+                    setTimeout(() => {
+                      e.target.textContent = 'copy';
+                    }, 2000);
+                  })
+                  .catch(function() {
+                    e.target.textContent = 'copy failed';
+                    setTimeout(() => {
+                      e.target.textContent = 'copy';
+                    }, 2000);
+                  });
+        }
+      });
+    });
+  }
+  window.addEventListener('DOMContentLoaded', createCopyButton);
+</script>
+</html>

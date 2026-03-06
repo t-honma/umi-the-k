@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>設置可能検索ウィジェットパターン</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/manual.css">
+
+  <!--  必須javascript ファイル 開始-->
+  <script src="./js/yprox_searchForm.js" defer></script>
+  <!--  必須javascript ファイル 終了-->
+  <!--  デフォルトスタイル CSSファイル 開始-->
+  <link rel="stylesheet" href="./css/yprox_searchForm_theme.css">
+  <!--  デフォルトスタイル CSSファイル 終了-->
+
+</head>
+<body>
+
+<h1>設置可能検索ウィジェットパターン</h1>
+
+<p>各ウィジェットの設置パターンをご確認ください。<br>設置する際は、single_searchModule.htmlもしくはmulti_searchModule.htmlの<br>設置手順をご確認の上設置をお願いいたします。</p>
+
+
+<section class="wrpInforamation mt-3">
+  <h2>カレンダー表示</h2>
+  <div class="wrpForm">
+
+    <!--form 開始-->
+    <form name="yprox-searchForm" data-calendar data-calender-position="top"
+          class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/"
+          method="get" role="search">
+      <div class="inner">
+
+        <!-- チェックイン日 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+          <label for="js-yprox-searchForm__checkin">宿泊日</label><br>
+          <span class="js-yprox-searchForm__boxCheckin-year">
+        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+          <option value="">-</option>
+        </select>
+        <em>年</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-month">
+        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+          <option value="">-</option>
+        </select>
+        <em>月</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-day">
+        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+          <option value="">-</option>
+        </select>
+        <em>日</em>
+      </span>
+          <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4">
+          <input type="text" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin">
+          <span class="js-yprox-searchForm__boxNoDate">
+        <label for="js-yprox-searchForm__noDate">日付未定</label>
+        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5">
+      </span>
+        </div>
+        <!-- チェックイン日 終了 -->
+
+        <!-- 人数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+          <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+          <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+        </div>
+        <!-- 人数 終了 -->
+
+        <!-- 泊数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+          <label for="js-yprox-searchForm__nights">泊数</label>
+          <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+        </div>
+        <!-- 泊数 終了 -->
+
+        <!-- 部屋数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+          <label for="js-yprox-searchForm__rooms">部屋数</label>
+          <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+        </div>
+        <!-- 部屋数 終了 -->
+
+        <!-- 検索ボタン 開始-->
+        <input type="submit" value="空室検索" tabindex="9" accesskey="y">
+        <!-- 検索ボタン 終了 -->
+
+      </div>
+    </form>
+    <!--form 終了-->
+
+  </div>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>カレンダーなし</h2>
+  <div class="wrpForm">
+
+    <!--form 開始-->
+    <form name="yprox-searchForm" class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search">
+      <div class="inner">
+
+        <!-- チェックイン日 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+          <label for="js-yprox-searchForm__checkin">宿泊日</label><br>
+          <span class="js-yprox-searchForm__boxCheckin-year">
+        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+          <option value="">-</option>
+        </select>
+        <em>年</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-month">
+        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+          <option value="">-</option>
+        </select>
+        <em>月</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-day">
+        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+          <option value="">-</option>
+        </select>
+        <em>日</em>
+      </span>
+          <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4">
+          <input type="text" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin">
+          <span class="js-yprox-searchForm__boxNoDate">
+        <label for="js-yprox-searchForm__noDate">日付未定</label>
+        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5">
+      </span>
+        </div>
+        <!-- チェックイン日 終了 -->
+
+        <!-- 人数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+          <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+          <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+        </div>
+        <!-- 人数 終了 -->
+
+        <!-- 泊数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+          <label for="js-yprox-searchForm__nights">泊数</label>
+          <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+        </div>
+        <!-- 泊数 終了 -->
+
+        <!-- 部屋数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+          <label for="js-yprox-searchForm__rooms">部屋数</label>
+          <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+        </div>
+        <!-- 部屋数 終了 -->
+
+        <!-- 検索ボタン 開始-->
+        <input type="submit" value="空室検索" tabindex="9" accesskey="y">
+        <!-- 検索ボタン 終了 -->
+
+      </div>
+    </form>
+    <!--form 終了-->
+
+  </div>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>カレンダー表示（初期日付未定）</h2>
+  <div class="wrpForm">
+
+    <!--form 開始-->
+    <form name="yprox-searchForm" data-calendar data-no-date data-calender-position="top"
+          class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/"
+          method="get" role="search">
+      <div class="inner">
+
+        <!-- チェックイン日 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+          <label for="js-yprox-searchForm__checkin">宿泊日</label><br>
+          <span class="js-yprox-searchForm__boxCheckin-year">
+        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+          <option value="">-</option>
+        </select>
+        <em>年</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-month">
+        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+          <option value="">-</option>
+        </select>
+        <em>月</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-day">
+        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+          <option value="">-</option>
+        </select>
+        <em>日</em>
+      </span>
+          <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4">
+          <input type="text" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin">
+          <span class="js-yprox-searchForm__boxNoDate">
+        <label for="js-yprox-searchForm__noDate">日付未定</label>
+        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5">
+      </span>
+        </div>
+        <!-- チェックイン日 終了 -->
+
+        <!-- 人数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+          <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+          <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+        </div>
+        <!-- 人数 終了 -->
+
+        <!-- 泊数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+          <label for="js-yprox-searchForm__nights">泊数</label>
+          <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+        </div>
+        <!-- 泊数 終了 -->
+
+        <!-- 部屋数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+          <label for="js-yprox-searchForm__rooms">部屋数</label>
+          <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+        </div>
+        <!-- 部屋数 終了 -->
+
+        <!-- 検索ボタン 開始-->
+        <input type="submit" value="空室検索" tabindex="9" accesskey="y">
+        <!-- 検索ボタン 終了 -->
+
+      </div>
+    </form>
+    <!--form 終了-->
+
+  </div>
+</section>
+
+<section class="wrpInforamation mt-3">
+  <h2>カレンダーなし（初期日付未定）</h2>
+  <div class="wrpForm">
+
+    <!--form 開始-->
+    <form name="yprox-searchForm" data-no-date class="js-yprox-searchForm yprox_theme--default" action="https://www.489pro-x.com/ja/s/管理ID/search/" method="get" role="search">
+      <div class="inner">
+
+        <!-- チェックイン日 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpCheckInn">
+          <label for="js-yprox-searchForm__checkin">宿泊日</label><br>
+          <span class="js-yprox-searchForm__boxCheckin-year">
+        <select class="js-yprox-searchForm__checkin-year" tabindex="1">
+          <option value="">-</option>
+        </select>
+        <em>年</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-month">
+        <select class="js-yprox-searchForm__checkin-month" tabindex="2">
+          <option value="">-</option>
+        </select>
+        <em>月</em>
+      </span>
+          <span class="js-yprox-searchForm__boxCheckin-day">
+        <select class="js-yprox-searchForm__checkin-day" tabindex="3">
+          <option value="">-</option>
+        </select>
+        <em>日</em>
+      </span>
+          <input type="text" class="js-yprox-searchForm__checkInnOut" tabindex="4">
+          <input type="text" id="js-yprox-searchForm__checkin" name="dt" class="js-yprox-searchForm__checkin">
+          <span class="js-yprox-searchForm__boxNoDate">
+        <label for="js-yprox-searchForm__noDate">日付未定</label>
+        <input type="checkbox" id="js-yprox-searchForm__noDate" class="js-yprox-searchForm__noDate" tabindex="5">
+      </span>
+        </div>
+        <!-- チェックイン日 終了 -->
+
+        <!-- 人数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpAdults">
+          <label for="js-yprox-searchForm__adults">1部屋あたりの人数</label>
+          <select name="num" id="js-yprox-searchForm__adults" class="js-yprox-searchForm__adults" tabindex="6"></select>
+        </div>
+        <!-- 人数 終了 -->
+
+        <!-- 泊数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpNights">
+          <label for="js-yprox-searchForm__nights">泊数</label>
+          <select name="nights" id="js-yprox-searchForm__nights" class="js-yprox-searchForm__nights" tabindex="7"></select>
+        </div>
+        <!-- 泊数 終了 -->
+
+        <!-- 部屋数 開始 -->
+        <div class="js-yprox-searchForm__wrpLabel js-yprox-searchForm__wrpRooms">
+          <label for="js-yprox-searchForm__rooms">部屋数</label>
+          <select name="r_num" id="js-yprox-searchForm__rooms" class="js-yprox-searchForm__rooms" tabindex="8"></select>
+        </div>
+        <!-- 部屋数 終了 -->
+
+        <!-- 検索ボタン 開始-->
+        <input type="submit" value="空室検索" tabindex="9" accesskey="y">
+        <!-- 検索ボタン 終了 -->
+
+      </div>
+    </form>
+    <!--form 終了-->
+
+  </div>
+</section>
+
+</body>
+</html>

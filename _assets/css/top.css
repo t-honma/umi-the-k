@@ -49,7 +49,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 330px;
+    height: 390px;
   }
 }
 @media (min-width: 769px) {
@@ -118,12 +118,12 @@
 }
 @media (max-width: 768px) {
   #top .container .reservation {
-    padding: 5vw 0;
+    padding: 5vw 5vw;
   }
 }
 @media (min-width: 769px) {
   #top .container .reservation {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 768px) {
@@ -134,7 +134,7 @@
 }
 @media (min-width: 769px) {
   #top .container .reservation .inner {
-    width: 930px;
+    width: 900px;
     margin: 0 auto;
   }
 }
@@ -144,107 +144,21 @@
 }
 @media (min-width: 769px) {
   #top .container .reservation .inner h2 {
-    float: left;
     font-size: 20px;
-    display: inline;
-    margin-top: 22px;
-    margin-right: 20px;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search {
-    display: inline-block;
+    display: block;
+    margin: 0 auto 20px auto;
   }
 }
 @media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner {
-    font-size: 3.2vw;
-    width: auto;
-    margin: 0 20vw 5vw 20vw;
-  }
-  #top .container .reservation .inner .reservation_search .reservation_search_inner:last-child {
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner {
-    display: inline-block;
-    font-size: 14px;
-    margin: 0 5px;
-    height: 60px;
-    vertical-align: middle;
-  }
-}
-#top .container .reservation .inner .reservation_search .reservation_search_inner select {
-  background-color: #fff;
-  border: none;
-  color: #000;
-}
-@media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner select {
-    font-size: 3.4666666667vw;
-    padding: 1.3333333333vw;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner select {
-    font-size: 15px;
-    padding: 5px;
-  }
-}
-@media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner .undecided {
-    margin-top: 1.3333333333vw;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner .undecided {
-    display: inline;
-    margin-left: 10px;
-  }
-}
-#top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
-  background-color: #42210f;
-  border: none;
-  color: #fff;
-}
-@media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
+  #top .container .reservation .inner .yprox_theme--default .inner .js-yprox-searchForm__boxNoDate {
     width: 100%;
-    padding: 1em 0;
-    border-radius: 1vw;
+    margin: 0.5em 0 0 0;
   }
 }
 @media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner input[type=submit] {
-    border-radius: 5px;
-    line-height: 1;
-    padding: 15px 0;
-    width: 200px;
-    margin-top: 12px;
-  }
-}
-@media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex {
-    margin-left: 10px;
-  }
-}
-@media (max-width: 768px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex .reservation_search_inner_table {
-    margin-right: 2.6666666667vw;
-  }
-}
-@media (min-width: 769px) {
-  #top .container .reservation .inner .reservation_search .reservation_search_inner.flex .reservation_search_inner_table {
-    display: inline-block;
-    width: 70px;
+  #top .container .reservation .inner .yprox_theme--default .inner .js-yprox-searchForm__boxNoDate {
+    width: auto !important;
+    margin: 0 2em 0 0.5em;
   }
 }
 @media (max-width: 768px) {
@@ -291,32 +205,44 @@
     margin-bottom: 1em;
   }
 }
-#top .container .introduction .inner .closed_info {
+#top .container .introduction .inner .information {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 @media (max-width: 768px) {
-  #top .container .introduction .inner .closed_info {
+  #top .container .introduction .inner .information {
     width: 90%;
     margin: 0 auto 10vw auto;
     padding: 5vw 0;
   }
 }
 @media (min-width: 769px) {
-  #top .container .introduction .inner .closed_info {
+  #top .container .introduction .inner .information {
     width: 800px;
     margin: 0 auto 50px auto;
     padding: 20px 0;
   }
 }
-#top .container .introduction .inner .closed_info h2 {
+#top .container .introduction .inner .information h2 {
   text-align: center;
   font-size: 110%;
   margin-bottom: 0.5em;
 }
 @media (min-width: 769px) {
-  #top .container .introduction .inner .closed_info h2 {
+  #top .container .introduction .inner .information h2 {
     /*font-size: 16px;*/
+  }
+}
+@media (max-width: 768px) {
+  #top .container .introduction .inner .information .btn {
+    margin: 5vw auto 0;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 769px) {
+  #top .container .introduction .inner .information .btn {
+    margin: 25px auto 0;
+    width: 650px;
   }
 }
 #top .container .rooms {

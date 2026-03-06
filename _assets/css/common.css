@@ -181,7 +181,7 @@ header .inner .sp_close img {
   header .inner nav {
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 65px;
   }
 }
 header .inner nav.visible {
